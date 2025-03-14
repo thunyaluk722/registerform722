@@ -84,22 +84,20 @@
                 integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
         <script>
             document.addEventListener("DOMContentLoaded", function () {
-            // เลือกฟอร์มทั้งหมดที่มี class 'needs-validation'
-            var forms = document.querySelectorAll(".needs-validation");
-            Array.prototype.slice.call(forms).forEach(function (form) {
-            form.addEventListener(
-            "submit",
-            function (event) {
+    var forms = document.querySelectorAll(".needs-validation");
+    Array.prototype.slice.call(forms).forEach(function (form) {
+        form.addEventListener("submit", function (event) {
             if (!form.checkValidity()) {
-            event.preventDefault(); // หยุดการ submit ถ้าฟอร์มไม่ผ่าน
-            event.stopPropagation();
+                event.preventDefault();  // หยุดการ submit ถ้าฟอร์มไม่ผ่าน
+                event.stopPropagation();
+            } else {
+                // ดำเนินการอะไรเพิ่มเติม (เช่น แจ้งเตือนก่อนการส่งข้อมูล)
+                alert("ฟอร์มจะถูกส่ง");
             }
-            form.classList.add("was-validated"); // เพิ่ม class เพื่อแสดง invalid-feedback
-            },
-            false
-            );
-            });
-            });
+            form.classList.add("was-validated");  // เพิ่ม class เพื่อแสดง invalid-feedback
+        }, false);
+    });
+});
         </script>
     </body>
 </html>
