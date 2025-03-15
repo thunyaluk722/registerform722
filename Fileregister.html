@@ -21,7 +21,7 @@
         <br>
         <h2><b>แบบฟอร์มลงทะเบียน</b></h2>
         <br>
-        <form class="row g-3 needs-validation" action="registerform722.vercel.app" method="POST" novalidate>
+        <form class="row g-3 needs-validation" action="https://webtech.swtesting-project.com/register.php" method="POST" novalidate>
             <div class="col-md-5">
                 <label for="firstNameTH" class="form-label">ชื่อ (ภาษาไทย)</label>
                 <input type="text" class="form-control" id="firstNameTH" name="firstNameTH" required>
@@ -44,27 +44,27 @@
             </div>
             <div class="col-md-10">
                 <label for="studentId" class="form-label">รหัสนักศึกษา</label>
-                <input type="text" class="form-control" id="studentId" name="nickname" required>
+                <input type="text" class="form-control" id="studentId" name="studentId" required>
             </div>
             <div class="col-md-10">
                 <label for="email" class="form-label">อีเมล</label>
-                <input type="email" class="form-control" id="email" name="nickname" required>
+                <input type="email" class="form-control" id="email" name="email" required>
                 <div class="invalid-feedback">Please enter a valid email.</div>
             </div>
             <div class="col-md-10">
                 <label for="phone" class="form-label">เบอร์มือถือ</label>
-                <input type="text" class="form-control" id="phone" name="nickname" required>
+                <input type="text" class="form-control" id="phone" name="phone" required>
             </div>
             <div class="row col-md-10">
                 <label for="birthDay" class="form-label">วันเดือนปีเกิด</label>
                 <div class="col-md-4">
-                    <input type="text" class="form-control" id="birthDay" placeholder="วัน" required>
+                    <input type="text" class="form-control" id="birthDay" name="birthDay" placeholder="วัน" required>
                 </div>
                 <div class="col-md-4">
-                    <input type="text" class="form-control" id="birthMonth" placeholder="เดือน" required>
+                    <input type="text" class="form-control" id="birthMonth" name="birthMonth" placeholder="เดือน" required>
                 </div>
                 <div class="col-md-4">
-                    <input type="text" class="form-control" id="birthYear" placeholder="ปี" required>
+                    <input type="text" class="form-control" id="birthYear" name="birthYear" placeholder="ปี" required>
                 </div>
             </div>
             <div class="col-md-10">
@@ -74,7 +74,7 @@
             <br>
             <div class="col-md-10">
                 <label for="about" class="form-label">เขียนถึงตัวเอง</label>
-                <textarea class="form-control" rows="4" id="about" required placeholder="เขียนถึงตัวเอง"></textarea>
+                <textarea class="form-control" rows="4" id="about" name="about" required placeholder="เขียนถึงตัวเอง"></textarea>
             </div>
             <div class="col-12 text-center">
                 <button class="btn btn-primary" type="submit">ลงทะเบียน</button>
