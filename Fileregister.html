@@ -24,36 +24,36 @@
         <form class="row g-3 needs-validation" action="https://webtech.swtesting-project.com/register.php" method="POST" novalidate>
             <div class="col-md-5">
                 <label for="firstNameTH" class="form-label">ชื่อ (ภาษาไทย)</label>
-                <input type="text" class="form-control" id="firstNameTH" required>
+                <input type="text" class="form-control" id="firstNameTH" name="firstNameTH" required>
             </div>
             <div class="col-md-5">
                 <label for="lastNameTH" class="form-label">นามสกุล (ภาษาไทย)</label>
-                <input type="text" class="form-control" id="lastNameTH" required>
+                <input type="text" class="form-control" id="lastNameTH" name="lastNameTH" required>
             </div><br>
             <div class="col-md-5">
                 <label for="firstNameEN" class="form-label">ชื่อ (ภาษาอังกฤษ)</label>
-                <input type="text" class="form-control" id="firstNameEN" required>
+                <input type="text" class="form-control" id="firstNameEN" name="firstNameEN" required>
             </div>
             <div class="col-md-5">
                 <label for="lastNameEN" class="form-label">นามสกุล (ภาษาอังกฤษ)</label>
-                <input type="text" class="form-control" id="lastNameEN" required>
+                <input type="text" class="form-control" id="lastNameEN" name="lastNameEN" required>
             </div>
             <div class="col-md-10">
                 <label for="nickname" class="form-label">ชื่อเล่น</label>
-                <input type="text" class="form-control" id="nickname" required>
+                <input type="text" class="form-control" id="nickname" name="nickname" required>
             </div>
             <div class="col-md-10">
                 <label for="studentId" class="form-label">รหัสนักศึกษา</label>
-                <input type="text" class="form-control" id="studentId" required>
+                <input type="text" class="form-control" id="studentId" name="nickname" required>
             </div>
             <div class="col-md-10">
                 <label for="email" class="form-label">อีเมล</label>
-                <input type="email" class="form-control" id="email" required>
+                <input type="email" class="form-control" id="email" name="nickname" required>
                 <div class="invalid-feedback">Please enter a valid email.</div>
             </div>
             <div class="col-md-10">
                 <label for="phone" class="form-label">เบอร์มือถือ</label>
-                <input type="text" class="form-control" id="phone" required>
+                <input type="text" class="form-control" id="phone" name="nickname" required>
             </div>
             <div class="row col-md-10">
                 <label for="birthDay" class="form-label">วันเดือนปีเกิด</label>
@@ -69,7 +69,7 @@
             </div>
             <div class="col-md-10">
                 <label for="hometown" class="form-label">ภูมิลำเนา</label>
-                <input type="text" class="form-control" id="hometown" required>
+                <input type="text" class="form-control" id="hometown" name="hometown" required>
             </div>
             <br>
             <div class="col-md-10">
@@ -82,25 +82,6 @@
         </form>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
                 integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-                <script>
-                    document.addEventListener("DOMContentLoaded", function () {
-                    // เลือกฟอร์มทั้งหมดที่มี class 'needs-validation'
-                    var forms = document.querySelectorAll(".needs-validation");
-                    Array.prototype.slice.call(forms).forEach(function (form) {
-                    form.addEventListener(
-                    "submit",
-                    function (event) {
-                    if (!form.checkValidity()) {
-                    event.preventDefault(); // หยุดการ submit ถ้าฟอร์มไม่ผ่าน
-                    event.stopPropagation();
-                    }
-                    form.classList.add("was-validated"); // เพิ่ม class เพื่อแสดง invalid-feedback
-                    },
-                    false
-                    );
-                    });
-                    });
-                    </script>
     </body>
 </html>
 
